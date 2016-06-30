@@ -21,7 +21,7 @@ public class StrengthTrainingFragment extends TrainingFragment {
     // Constants
     private final int SHAKE_THRESHOLD = 2000;   // must be more than this difference
     private final int SHAKE_TIME = 100;         // shakes must be 100+ ms apart
-    private final int TIME = 1000 * 10;         // time the task lasts (30 sec)
+    private final int TIME = 1000 * 60;         // time the task lasts (60 sec)
 
     private TextView txtShakes;
     private TextView txtTime;

@@ -138,7 +138,7 @@ public class QuestView extends LinearLayout {
         // Animate expansion
         final int widthSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
         content.measure(widthSpec, content.getHeight());
-        ValueAnimator mAnimator = slideAnimator(0, 365, content);
+        ValueAnimator mAnimator = slideAnimator(0, 500, content);
         mAnimator.start();
     }
 

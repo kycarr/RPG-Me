@@ -27,10 +27,10 @@
             <!-- Grass -->
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:scaleType="fitEnd"
+                android:scaleType="fitXY"
                 android:src="@drawable/grass_short"/>
 
             <!-- Stats -->
@@ -125,6 +125,7 @@
                         tools:text="MDEF: 1"/>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/buttons"
                 android:orientation="horizontal"

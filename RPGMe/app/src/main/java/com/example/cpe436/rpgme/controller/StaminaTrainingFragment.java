@@ -13,8 +13,8 @@ import com.example.cpe436.rpgme.R;
  */
 public class StaminaTrainingFragment extends TrainingFragment {
 
-    private final int DISTANCE_THRESHOLD = 1;       // 1 meter
-    private final int TIME_THRESHOLD = 1000 * 60;   // 1 minute
+    private final int DISTANCE_THRESHOLD = 1;            // 1 meter
+    private final int TIME_THRESHOLD = 1000 * 60 * 60;   // 1 minute
 
     private TextView txtDistance;
     private int metersTraveled;
