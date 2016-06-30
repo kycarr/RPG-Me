@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?android:attr/actionBarSize"
+    tools:context=".controller.MainActivity" >
+
+    <!-- Character information -->
+    <FrameLayout
+        android:id="@+id/content_character_info"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <!-- Upcoming Quests -->
+    <TextView
+        android:id="@+id/list_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/_gradient"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="@string/schedule_today"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"/>
+
+    <include layout="@layout/list" />
+
+</LinearLayout>

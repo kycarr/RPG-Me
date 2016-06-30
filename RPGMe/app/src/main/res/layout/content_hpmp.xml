@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Level and Class -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+        <TextView
+            tools:text="@string/level_current"
+            android:id="@+id/my_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/colorBlack" />
+        <TextView
+            tools:text="@string/class_adventurer"
+            android:id="@+id/my_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+    <!-- HP bar -->
+    <TextView
+        tools:text="@string/stat_hp"
+        android:id="@+id/my_hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/_hp_bar"
+        android:textColor="@color/colorWhite" />
+    <!-- MP bar -->
+    <TextView
+        tools:text="@string/stat_mp"
+        android:id="@+id/my_mp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/_mp_bar"
+        android:textColor="@color/colorWhite" />
+    <!-- Recovery -->
+
+    <!-- EXP -->
+    <TextView
+        tools:text="@string/exp_next"
+        android:id="@+id/my_exp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/colorBlack" />
+
+</LinearLayout>

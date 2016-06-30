@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Character information -->
+    <FrameLayout
+        android:id="@+id/content_character_info"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <!-- Monster Information-->
+    <include layout="@layout/fragment_battle_monster"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Battle Options -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/battle_skill1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:drawableStart="@drawable/skill_attack_color"
+            tools:text="Attack (0 MP)"/>
+        <Button
+            android:id="@+id/battle_skill2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:drawableStart="@drawable/skill_magic_color"
+            tools:text="Magic (10 MP)"/>
+    </LinearLayout>
+
+</LinearLayout>

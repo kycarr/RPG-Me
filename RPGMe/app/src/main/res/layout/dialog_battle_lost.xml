@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/_gradient"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:text="@string/battle_lost" />
+
+    <ImageView
+        android:id="@+id/battle_monster"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/m_slime" />
+    <TextView
+        android:id="@+id/battle_reward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:text="@string/lose_message" />
+
+    <Button
+        android:id="@+id/button_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:text="@string/okay" />
+
+</LinearLayout>

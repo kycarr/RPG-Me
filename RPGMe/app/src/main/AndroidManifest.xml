@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cpe436.rpgme">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.example.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher1s"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.example.cpe436.rpgme.controller.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.cpe436.rpgme.controller.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity android:name="com.example.cpe436.rpgme.controller.QuestActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.cpe436.rpgme.controller.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cpe436.rpgme.controller.MainActivity" />
+        </activity>
+
+        <activity android:name="com.example.cpe436.rpgme.controller.CharacterActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.cpe436.rpgme.controller.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cpe436.rpgme.controller.MainActivity" />
+        </activity>
+
+        <activity android:name="com.example.cpe436.rpgme.controller.BattleActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.cpe436.rpgme.controller.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cpe436.rpgme.controller.MainActivity" />
+        </activity>
+
+        <activity android:name="com.example.cpe436.rpgme.controller.StrengthActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.cpe436.rpgme.controller.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cpe436.rpgme.controller.MainActivity" />
+        </activity>
+
+        <activity android:name="com.example.cpe436.rpgme.controller.StaminaActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.example.cpe436.rpgme.controller.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cpe436.rpgme.controller.MainActivity" />
+        </activity>
+
+        <receiver android:process=":remote" android:name="com.example.cpe436.rpgme.common.AlarmReceiver" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Titles -->
+    <string name="app_name">RPG ME</string>
+    <string name="my_quests">My Quests</string>
+    <string name="new_quest">New Quest</string>
+    <string name="edit_quest">Edit Quest</string>
+    <string name="my_character">My Character</string>
+    <string name="edit_character">Edit Character</string>
+    <string name="sta">Training STA</string>
+    <string name="str">Training STR</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_quests">Quests</string>
+    <string name="nav_battle">Battle</string>
+    <string name="nav_shop">Shop</string>
+    <string name="nav_character">Character</string>
+    <string name="nav_training">Training</string>
+    <string name="nav_int">Intelligence</string>
+    <string name="nav_str">Strength</string>
+    <string name="nav_sta">Stamina</string>
+
+    <!-- Action Bar -->
+    <string name="action_filter">Filter</string>
+    <string name="action_sort">Sort</string>
+    <string name="remove_menuitem">Remove</string>
+
+    <!-- Sort Types -->
+    <string name="sort_newest">Newest</string>
+    <string name="sort_oldest">Oldest</string>
+    <string name="sort_type">Type</string>
+
+    <!-- Schedule Header -->
+    <string name="schedule_all">MY QUESTS</string>
+    <string name="schedule_today">TODAY\'S QUESTS</string>
+
+    <!-- Dialogue -->
+    <string name="quest_message">What would you like to do with this quest?</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="okay">Okay</string>
+    <string name="select_class">Select a Class</string>
+    <string name="exp_earned" formatted="true">You earned %d EXP!</string>
+    <string name="level_up">Leveled up!</string>
+    <string name="int_up" formatted="true">INT +%d</string>
+    <string name="str_up" formatted="true">STR +%d</string>
+    <string name="sta_up" formatted="true">STA +%d</string>
+
+    <!-- Quest -->
+    <string name="complete_quest">Complete!</string>
+    <string name="no_start">No start date</string>
+    <string name="no_end">No end date</string>
+    <string name="no_notification">No notifications</string>
+    <string name="quest_name">Quest Name</string>
+    <string name="quest_start">Start Date</string>
+    <string name="quest_end">End Date</string>
+    <string name="quest_notify">Notification Date</string>
+    <string name="quest_time">Time</string>
+    <string name="quest_no_repeat">Does not repeat</string>
+    <string name="quest_add">Create Quest</string>
+    <string name="quest_edit">Edit Quest</string>
+    <string name="quest_reward" formatted="true">Reward: %d exp</string>
+    <string name="quest_starts" formatted="true">Starts: %s</string>
+    <string name="quest_ends" formatted="true">Ends: %s</string>
+    <string name="quest_notifies" formatted="true">Notify me: %s</string>
+    <string name="quest_complete">Quest Completed!</string>
+
+    <!-- Quest Types -->
+    <string name="all">All</string>
+    <string name="homework">Homework</string>
+    <string name="reading">Reading</string>
+    <string name="work">Work</string>
+    <string name="reminder">Reminder</string>
+    <string name="exercise">Exercise</string>
+    <string name="chore">Chore</string>
+
+    <!-- Character display information -->
+    <string name="level_current" formatted="true">Lv. %d</string>
+    <string name="exp_next">%1$d/%2$d exp to next lvl</string>
+    <string name="gold" formatted="true">%d gold</string>
+    <string name="stat_hp">HP: %1$d/%2$d</string>
+    <string name="stat_mp">MP: %1$d/%2$d</string>
+    <string name="stat_int">INT: %1$d (%2$d)</string>
+    <string name="stat_str">STR: %1$d (%2$d)</string>
+    <string name="stat_sta">STA: %1$d (%2$d)</string>
+    <string name="stat_atk">ATK: %1$d</string>
+    <string name="stat_def">DEF: %1$d</string>
+    <string name="stat_matk">MATK: %1$d</string>
+    <string name="stat_mdef">MDEF: %1$d</string>
+    <string name="change_class">Change Class</string>
+    <string name="change_avatar">Change Avatar</string>
+
+    <!-- Character Class Names -->
+    <string name="class_adventurer">Adventurer</string>
+    <string name="class_magician">Magician</string>
+    <string name="class_knight">Knight</string>
+    <string name="class_cleric">Cleric</string>
+    <string name="class_thief">Thief</string>
+    <string name="class_assassin">Assassin</string>
+
+    <!-- Training -->
+    <string name="shake">SHAKE!</string>
+    <string name="training_complete">Training Completed!</string>
+    <string name="meters" formatted="true">Meters Traveled:</string>
+
+    <!-- Battle -->
+    <string name="battle_won">You Won!</string>
+    <string name="battle_lost">You Lost…</string>
+    <string name="battle_reward" formatted="true">You\'ve earned %d gold</string>
+    <string name="lose_message">Try training and questing some more</string>
+
+    <!-- Avatar -->
+    <string name="hair">Hair</string>
+    <string name="body">Skin Tone</string>
+    <string name="eyes">Eye Color</string>
+
+</resources>

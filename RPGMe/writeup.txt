@@ -1,0 +1,55 @@
+What I have so far:
+- Character
+	Loads from local storage, and if one is not saved, creates default
+	Singleton class; loaded at start then accessed statically
+	Getters and setters and basic logic done
+	Class, level, exp, int, str, sta, sprite pieces
+		CharacterClass and Skill enums
+		Sprite class
+	Created sprites for each class and pieces for avatar
+- Quests
+	Loads quest list from local storage, create if one not found
+		Need to make a singleton QuestList too...?
+	QuestType enums
+	Image, start date, end date, notification date
+		Found image icons for each type of quest on FlatIcon
+	QuestView for displaying Quests, QuestListAdapter for list of quests
+	Notifications: notification sent @ notification time
+		Currently hardcoded notification details but time is based
+		on quest notification time
+	Expandable (still need to do animation though)
+- Fragments
+	MyFragment: default fragment, just inflates layout
+	HomeFragment: character basic info + quests for today
+		Finished
+	QuestListFragment: loading/display of quests + adding new quest
+		Right now new quest is hardcoded
+		Need to make a fragment for adding a new quest
+	TrainingFragment: abstract, training fragments will extend this
+		update() function called by Activity when event happens
+		getThreshold() event must be greater than this to be registered
+		getTimeThreshold() events must be at least this time apart
+	StrengthTrainingFragment:
+		Example, updates on accelerometer shakes
+	StaminaTrainingFragment:
+		Example, updates on meters traveled
+- Activities
+	MainActivity: handles navbar setup, loading fragments, home fragment
+	QuestActivity: handles displaying questlist + adding new quest
+	StrengthActivity: handles accelerometer events
+	StaminaActivity: handles locationlistener events
+- Navigation Drawer
+	Home, Quests, Strength Training, & Stamina Training work
+- Toolbar
+	Currently doesn't do anything
+
+
+Required Technologies:
+- Saving and Loading (see StorageTool)
+- Accelerometer (see StrengthActivity)
+- Map Tracking (see StaminaActivity)
+- Notifications (see AlarmService and AlarmReceiver)
+	Note: I did set up the app for GCM and got that working,
+	but I found that GCM was not what I wanted for my notifications.
+	Plus it required I have my own server. So I am using AlarmManager
+	instead for the scheduling of notifications.

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image and basic info -->
+            <FrameLayout
+                android:id="@+id/content_character_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <!-- Grass -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/grass_short"/>
+
+            <!-- Stats -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:background="@drawable/_box" >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/character_int"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/stat_int_blue"
+                        android:drawablePadding="10dp"
+                        android:textSize="18sp"
+                        tools:text="INT: 1 (1)"/>
+                    <TextView
+                        android:id="@+id/character_str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/stat_str_red"
+                        android:drawablePadding="10dp"
+                        android:textSize="18sp"
+                        tools:text="STR: 1 (1)"/>
+                    <TextView
+                        android:id="@+id/character_sta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/stat_sta_green"
+                        android:drawablePadding="10dp"
+                        android:textSize="18sp"
+                        tools:text="STA: 1 (11)"/>
+                    <TextView
+                        android:id="@+id/gold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/gold_color"
+                        android:drawablePadding="10dp"
+                        android:textSize="18sp"
+                        tools:text="0 Gold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/character_atk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/skill_attack_color"
+                        android:drawablePadding="10dp"
+                        android:textSize="18sp"
+                        tools:text="ATK: 1" />
+                    <TextView
+                        android:id="@+id/character_def"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/skill_defend_c"
+                        android:drawablePadding="10dp"
+                        android:textSize="18sp"
+                        tools:text="DEF: 1" />
+                    <TextView
+                        android:id="@+id/character_matk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/skill_magic_color"
+                        android:drawablePadding="10dp"
+                        android:textSize="18sp"
+                        tools:text="MATK: 1"/>
+                    <TextView
+                        android:id="@+id/character_mdef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/skill_defend2_c"
+                        android:drawablePadding="10dp"
+                        android:textSize="18sp"
+                        tools:text="MDEF: 1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Button
+                    android:id="@+id/change_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:background="@color/colorBrown"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/change_class" />
+                <Button
+                    android:id="@+id/change_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp"
+                    android:background="@color/colorBrown"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/change_avatar" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

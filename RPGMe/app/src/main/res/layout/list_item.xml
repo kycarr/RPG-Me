@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:descendantFocusability="blocksDescendants" >
+
+    <!-- Basic information about quest -->
+    <LinearLayout
+        android:id="@+id/layout_quest_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <!-- Type of quest -->
+        <ImageView
+            android:id="@+id/quest_type_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp" />
+        <!-- Name of quest -->
+        <TextView
+            android:id="@+id/quest_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_quest_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <!-- Quest start time -->
+        <TextView
+            android:id="@+id/quest_date_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <!-- Quest end time -->
+        <TextView
+            android:id="@+id/quest_date_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <!-- Quest notification time -->
+        <TextView
+            android:id="@+id/quest_date_notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <!-- EXP earned -->
+        <TextView
+            android:id="@+id/quest_exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <!-- Complete quest -->
+            <Button
+                android:id="@+id/quest_button_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorWhite"
+                android:text="@string/complete_quest"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
